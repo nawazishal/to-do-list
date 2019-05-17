@@ -51,20 +51,7 @@
 
  
    
-// }
-// var lis=document.querySelectorAll('li');
-// lis.style.color='red';
 
-
-
-
-//  var j;
-//  for(j=0 ; j<listItems.length ; j++)
-//  {
-//      items[i].onclick=function(){
-//          items.style.display=none;
-//      }
-//  }
 
 
  
