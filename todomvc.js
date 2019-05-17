@@ -97,4 +97,43 @@
      }
    }
  }
+/////complete function
+
+
+
+function fun3() {
+  var x = document.getElementById("myUL");
+  var y = x.getElementsByTagName("li");
+  var i;
+  for (i = 0; i < y.length; i++) {
+    console.log[i];
+
+    if (y[i].classList.toggle('checked') == true) {
+
+      y[i].style.display = 'none';
+    }
+
+  }
+}
+
+//////active function
+
+function fun4(ev){
+  var p= document.getElementById("myUL");
+  var q = p.getElementsByTagName("li");
+  let count=0;
+  var j;
+  for (j = 0; j < p.length; j++) {
+
+    if(p[i].checked)
+    {
+     console.log(p);
+
+    }
+
+  }
+
+}
+
+
  
