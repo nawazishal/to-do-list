@@ -18,13 +18,6 @@
 
 
 
- //   to Add a check symbol 
- const list = document.querySelector('ul');
- list.addEventListener('click', function(ev) {
-   if (ev.target.tagName === 'LI') {
-     ev.target.classList.toggle('checked');
-   }
- }, false);
  
  
  // To Delete list items
@@ -103,23 +96,40 @@ function fun3() {
   }
 }
 
-//////active function
-
-function fun4(ev){
-  var p= document.getElementById("myUL");
-  var q = p.getElementsByTagName("li");
-  let count=0;
-  var j;
-  for (j = 0; j < p.length; j++) {
-
-    if(p[i].checked)
+/////complete function
+function complete() {  
+ 
+  var ul = document.getElementById("myUL");
+  var listItem = ul.getElementsByTagName("li");
+  for(let i=0 ; i< listItem.length ; i++)
+  {
+    let item=listItem[i].childNodes[1].checked;
+    if(item != true)
     {
-     console.log(p);
-
+      listItem[i].style.display="none";
     }
-
+    else {
+      listItem[i].style.display = "block";
+    }
+    
   }
-
+}
+/////// Active function
+function activefun() {  
+  var ul = document.getElementById("myUL");
+  var listItem = ul.getElementsByTagName("li");
+  for(let i=0 ; i< listItem.length ; i++)
+  {
+    let item=listItem[i].childNodes[1].checked;
+    if(item === true)
+    {
+      listItem[i].style.display="none"; 
+    }
+    else {
+      listItem[i].style.display = "block";
+    }
+    
+  }
 }
 
 
