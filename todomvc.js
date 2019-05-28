@@ -2,7 +2,7 @@ let todos = document.getElementById("myUL");
   let listItems = todos.getElementsByTagName("li");
   let i;
   let count = 0;
-// Create a "close" button and append it to each list item
+// Create a "close" button 
 let myNodelist = document.getElementsByTagName("LI");
 for (i = 0; i < myNodelist.length; i++) {
   let span = document.createElement("SPAN");
@@ -30,7 +30,7 @@ let newElement = () => {
   let date = document.createElement("text");
   let time = new Date();
   date.innerHTML = time;
-  date.style.margin = "10px";
+  date.style.margin = "12px";
   let inputValue = document.getElementById("input").value;
   let t = document.createTextNode(inputValue);
   li.appendChild(t);
