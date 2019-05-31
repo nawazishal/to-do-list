@@ -17,7 +17,7 @@ let close = document.getElementsByClassName("close");
 for (i = 0; i < close.length; i++) {
   close[i].onclick = () => {
     let div = this.parentElement;
-    div.style.display = "none";
+    div.style.color="red";
   }
 }
 
