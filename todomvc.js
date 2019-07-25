@@ -10,12 +10,14 @@ let newElement = () => {
   let checkBox = document.createElement("input");
   checkBox.type = "checkbox";
   let inputValue = document.getElementById("input").value;
+  let text = document.createTextNode(inputValue);
+  li.appendChild(text);
   li.appendChild(checkBox);
-  li.appendChild(date);
+  
   if (inputValue === '') {
     alert("You must write something!");
   } else {
-    document.getElementById("myUL").appendChild(li);
+    document.getElementById("myUL").insertBefore(li,todos.childNodes[0])
   }
   document.getElementById("input").value = "";
   
@@ -47,7 +49,7 @@ let completedTasks= ()=> {
       count = count + 1;
     }
   }
-  alert("reaming Tasks completed " + count);
+  alert("reaming Tasks " + count);
 }
 
 //show all function
@@ -67,5 +69,6 @@ let clearCompletedTasks = ()=> {
     }
   }
 }
+
 
 
