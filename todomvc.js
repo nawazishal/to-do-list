@@ -68,14 +68,4 @@ let clearCompletedTasks = ()=> {
   }
 }
 
-// filter 
-let filterTasks = ()=> {
-var items = document.querySelectorAll('li');
-var filter   = Array.prototype.filter;
 
-var itemsFlex = filter.call(items, function(completedTasks) {
-    return completedTasks.todos;  
-});
-
-console.log(itemsFlex);
-}
