@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="todomvc.css" />
-  </head>
-  <body>
-    <div id="div1" class="header">
-      <h2>Todos</h2>
-      <input type="text" id="input" placeholder="what to dos..." />
-      <button onclick="newElement()" class="addBtn">Add</button>
-    </div>
-    <ul id="myUL"></ul>
-    <button id="allItemsbtn" onclick="showAllToDos()">All</button>
-    <button id="activebtn" onclick="uncompletedTasks()">active</button>
-    <button id="completebtn" onclick="completedTasks()">complete</button>
-    <button id="clearbtn" onclick="clearCompletedTasks()"> Delete completed</button>
-    <script src="todomvc.js"></script>
-  </body>
+<head>
+  <link rel="stylesheet" href="todomvc.css" >
+</head>
+<body>
+  <div id="div1" class="header">
+    <h2>Todos</h2>
+    <input type="text" id="input"  placeholder="what to dos..."> 
+    <button onclick="newElement()" class="addBtn">Add</button>
+  </div>
+  <ul id="myUL">
+  </ul>
+  <button id="allItemsbtn"  onclick="showAllToDos()">All</button>
+  <button id="activebtn" onclick="uncompletedTasks()">active</button>
+  <button id="completebtn" onclick="completedTasks()"  >complete</button>
+  <button id="clearbtn"  onclick="clearCompletedTasks()" >clear completed</button>  
+  <script src="todomvc.js"></script>
+</body>
 </html>
